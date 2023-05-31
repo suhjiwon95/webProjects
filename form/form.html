@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>HTML form submission</h1>
+            <p>Fill out the form below and click the submit button.
+                <span>if your form is incomplete, an error message will be shown.</span>
+            </p>
+        </div>
+        <div class="form-container">
+            <form action="">
+                <input type="text" id="fname" placeholder="First name">
+                <input type="text" id="lname" placeholder="Last name">
+                <input type="text" id="contact" placeholder="Mobile number or email">
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday" value="2023-01-01">
+                <label for="gender">Gender</label>
+                <label for="female"></label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="male"></label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="Other"></label>
+                <input type="radio" id="other" name="gender" value="Other">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

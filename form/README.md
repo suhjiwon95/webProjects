@@ -1,7 +1,7 @@
 # HTML FORM
 ## HTML, CSS, JS
 ## Areas to focus
-1. Creating different form elements such as <input type="text">, <input type="radio">
+1. Creating different form elements such as ```<input type="text">, <input type="radio">```
 2. Creating a button that handles the form submission.
 3. Using LocalStorage() to store and display the names on the web browser on submission.
 4. Overall look and feel

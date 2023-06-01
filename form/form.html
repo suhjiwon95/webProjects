@@ -4,32 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>HTML Form</title>
 </head>
 <body>
     <div class="container">
         <div class="title">
             <h1>HTML form submission</h1>
-            <p>Fill out the form below and click the submit button.
-                <span>if your form is incomplete, an error message will be shown.</span>
+            <p>A quick and easy way to submit a form!</p>
             </p>
         </div>
         <div class="form-container">
-            <form action="">
-                <input type="text" id="fname" placeholder="First name">
-                <input type="text" id="lname" placeholder="Last name">
-                <input type="text" id="contact" placeholder="Mobile number or email">
-                <label for="birthday">Birthday</label>
-                <input type="date" id="birthday" value="2023-01-01">
-                <label for="gender">Gender</label>
-                <label for="female"></label>
-                <input type="radio" id="female" name="gender" value="Female">
-                <label for="male"></label>
-                <input type="radio" id="male" name="gender" value="Male">
-                <label for="Other"></label>
-                <input type="radio" id="other" name="gender" value="Other">
-                <button type="submit">Submit</button>
+            <form action="" id="form">
+                <div class="form-name">
+                    <input type="text" id="fname" placeholder="First name" required>
+                    <input type="text" id="lname" placeholder="Last name"required>
+                </div>
+                <div class="form-contact">
+                    <input type="text" id="contact" placeholder="Mobile number or email" required>
+                </div>
+                <div class="form-bday">
+                    <p>Birthday</p>
+                    <input type="date" id="birthday" value="2023-01-01" required>
+                </div>
+                <div class="form-gender">
+                    <div class="gender-title">
+                        <p for="gender">Gender</p>
+                    </div>
+                    <div class="gender-box">
+                        <div class="female-box genders">
+                            <p for="female">Female</p>
+                            <input type="radio" id="female" name="gender" value="Female" required>
+                        </div>
+                        <div class="male-box genders">
+                            <p for="male">Male</p>
+                            <input type="radio" id="male" name="gender" value="Male" required>
+                        </div>
+                        <div class="other-box genders">
+                            <p for="Other">Other</p>
+                            <input type="radio" id="other" name="gender" value="Other" required>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="button-container">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+               
             </form>
+        </div>
+
+        <div class="requests">
+            <p>Here is a list of names that requests the form submission</p>
+            <ol class="list"></ol>
         </div>
         
     </div>

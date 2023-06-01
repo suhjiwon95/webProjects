@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px 5px rgba(0, 0, 255, .2);
+    display: flex;
+    flex-direction: column;
+    margin: 10em auto;
+    padding: 1.8em;
+
+}
+
+.form-container {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    color: #682bd7;
+    margin-bottom: 0.2em;
+}
+
+.title p {
+    color: gray;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 2em;
+}
+
+button {
+    cursor: pointer;
+    width: 10em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid #682bd7;
+    background-color: #682bd7;
+    color: #FFFAFA;
+}
+
+button:hover {
+    background-color: transparent;
+    color: #682bd7;
+    box-shadow: 2px 1px 3px 1px rgba(0, 0, 255, .2);
+}
+
+input {
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 1px 3px 1px rgba(0, 0, 255, .2);
+}
+
+.form-name {
+    display: flex;
+    gap: 0.4em;
+    margin-bottom: 0.6em;
+}
+
+.form-name input {
+    flex: 1;
+}
+
+.form-contact input {
+    width: 100%;
+}
+
+.form-bday, 
+.form-gender {
+    margin-top: 1.8em;
+    font-size: 0.8rem;
+    font-weight: 700;
+    
+}
+
+.form-gender {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-gender .gender-title {
+    margin-bottom: 0.4em;
+}
+
+.gender-box {
+    display: flex;
+    gap: 0.4em;
+    font-weight: 400;
+}
+
+.form-bday p {
+    
+    margin-bottom: .6em;
+}
+
+.form-gender .genders{
+    box-shadow: 2px 1px 3px 1px rgba(0, 0, 255, .2);
+    flex: 1;
+    padding: 0em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6em;
+}
+
+.form-gender .genders input {
+    border: none;
+    box-shadow: none;
+    
+}
+
+.requests {
+    text-align: center;
+    box-shadow: 2px 1px 3px 1px rgba(0, 0, 255, .2);
+    border-radius: 10px;
+    min-height: 3em;
+    padding: 3em;
+    padding-top: 1.5em;
+    font-weight: 700;
+}

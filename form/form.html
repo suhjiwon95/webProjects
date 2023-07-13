@@ -15,17 +15,19 @@
             </p>
         </div>
         <div class="form-container">
-            <form action="" id="form">
+            <form action="" id="form" novalidate>
                 <div class="form-name">
                     <input type="text" id="fname" placeholder="First name" required>
+                    <span class="error active" aria-live="polite"></span>
                     <input type="text" id="lname" placeholder="Last name"required>
+                    <span class="error active" aria-live="polite"></span>
                 </div>
                 <div class="form-contact">
                     <input type="text" id="contact" placeholder="Mobile number or email" required>
                 </div>
                 <div class="form-bday">
                     <p>Birthday</p>
-                    <input type="date" id="birthday" value="2023-01-01" required>
+                    <input type="date" id="birthday" required>
                 </div>
                 <div class="form-gender">
                     <div class="gender-title">
@@ -34,15 +36,15 @@
                     <div class="gender-box">
                         <div class="female-box genders">
                             <p for="female">Female</p>
-                            <input type="radio" id="female" name="gender" value="Female" required>
+                            <input type="radio" id="female gender" name="gender" value="female" required>
                         </div>
                         <div class="male-box genders">
                             <p for="male">Male</p>
-                            <input type="radio" id="male" name="gender" value="Male" required>
+                            <input type="radio" id="male gender" name="gender" value="male" required>
                         </div>
                         <div class="other-box genders">
                             <p for="Other">Other</p>
-                            <input type="radio" id="other" name="gender" value="Other" required>
+                            <input type="radio" id="other gender" name="gender" value="other" required>
                         </div>
                     </div>
                     
@@ -61,6 +63,6 @@
         </div>
         
     </div>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

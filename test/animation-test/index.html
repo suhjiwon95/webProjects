@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem auto;
+            transform-origin: top left;
+        }
+
+        img {
+            width: 1100px;
+            transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+            -webkit-animation-name: FadeInOut;
+            -webkit-animation-timing-function: ease-in-out;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-duration: 10s;
+            -webkit-animation-direction: alternate;
+
+        }
+
+        @keyframes FadeInOut {
+            0% {opacity:1;}
+            25% {opacity:.75;}
+            50% {opacity:.5;}
+            100% {opacity:0;}
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./Tree-Roots.jpg" alt="">
+    </div>
+   
+</body>
+</html>

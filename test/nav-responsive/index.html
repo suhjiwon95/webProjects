@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin:0;
+            padding:0; 
+        }
+        .contianer {
+            width: 100vw;
+        }
+
+        nav ul,
+        .links {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 2em;
+            background-color: white;
+            padding: 1em;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        .border {
+            border-top: 2px solid black;
+            width: 24px;
+            height: 6.4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.2em;
+        }
+
+        .links {
+            border: none;
+            width: 100%;
+            position: fixed;
+            border-bottom: 1px solid black;
+            transition: 0.3s;
+        }
+
+        
+
+        .hamburger-icon {
+            display: none;
+            cursor: pointer;
+            align-self: flex-end;
+            order: 1;
+            margin-left: auto;
+        }
+
+        .icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+
+        @media screen and (max-width: 760px) {
+            nav ul,
+            .links {
+                flex-direction: column;
+            }
+
+            .links {
+                right: -100%;
+                height: 100%;
+                top: 70px;
+            }
+
+            .hamburger-icon {
+                display: block;
+                order: 0;
+            }
+
+            .links.active {
+                right: 0;
+                
+            }            
+            
+            .hamburger-icon.active .border:nth-child(2) {
+                opacity: 0;
+            }
+            .hamburger-icon.active .border:nth-child(1) {
+                transform: translateY(9px) rotate(45deg);
+            }
+            .hamburger-icon.active .border:nth-child(3) {
+                transform: translateY(-4px) translateX(2px) rotate(-45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <div class="hamburger-icon">
+                    <div class="icon">
+                        <div class="border"></div>
+                        <div class="border"></div>
+                        <div class="border"></div>
+                    </div>
+                </div>
+                <div class="links">
+                    <li>link 1</li>
+                    <li>link 2</li>
+                    <li>link 3</li>
+                    <li>link 4</li>
+                    <li>link 5</li>
+                </div>
+                
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        const hamburgerIcon = document.querySelector('.hamburger-icon');
+        const links = document.querySelector('.links');
+
+        hamburgerIcon.addEventListener('click', () => {
+            hamburgerIcon.classList.toggle('active');
+            links.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
